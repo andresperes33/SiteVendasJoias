@@ -11,15 +11,17 @@
     <link rel="icon" href="./img/lista.png" type="image/png">
     <script>
         !function (w, d, t) {
-            w.TiktokAnalyticsObject=t;
-            var ttq=w[t]=w[t]||[];
-            ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],
-            ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);
-            ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},
-            ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;
-            ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};
-            n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;
-            e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+            w.TiktokAnalyticsObject = t;
+            var ttq = w[t] = w[t] || [];
+            ttq.methods = ["page", "track", "identify", "instances", "debug", "on", "off", "once", "ready", "alias", "group", "enableCookie", "disableCookie", "holdConsent", "revokeConsent", "grantConsent"],
+                ttq.setAndDefer = function (t, e) { t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } }; for (var i = 0; i < ttq.methods.length; i++)ttq.setAndDefer(ttq, ttq.methods[i]);
+            ttq.instance = function (t) { for (var e = ttq._i[t] || [], n = 0; n < ttq.methods.length; n++)ttq.setAndDefer(e, ttq.methods[n]); return e },
+                ttq.load = function (e, n) {
+                    var r = "https://analytics.tiktok.com/i18n/pixel/events.js", o = n && n.partner;
+                    ttq._i = ttq._i || {}, ttq._i[e] = [], ttq._i[e]._u = r, ttq._t = ttq._t || {}, ttq._t[e] = +new Date, ttq._o = ttq._o || {}, ttq._o[e] = n || {};
+                    n = document.createElement("script"); n.type = "text/javascript", n.async = !0, n.src = r + "?sdkid=" + e + "&lib=" + t;
+                    e = document.getElementsByTagName("script")[0]; e.parentNode.insertBefore(n, e)
+                };
             ttq.load('CRPOB83C77U87P3R9PEG');
             ttq.page();
         }(window, document, 'ttq');
@@ -56,7 +58,8 @@
 
     <!-- Seção Hero -->
     <div class="container text-center py-2">
-            <h1 style="font-size: 24px; margin-top: 20px;">TENHA ACESSO A <span class="text-danger">MAIS DE 220 FORNECEDORES DE JOIAS</span>
+        <h1 style="font-size: 22px; margin-top: 20px;"><span class="text-danger">MAIS DE 220 FORNECEDORES DE
+                JOIAS</span>
             ENTRE FABRICANTES E ATACADISTAS</h1>
 
         <div style="font-size: 16px; " class="bg-danger text-white p-2 mt-4">Fature + de 5 mil por mês ...</div>
@@ -66,12 +69,11 @@
             </div>
         </div>
         <h2 style="font-size: 22px;" class="mt-2">ACESSE A LISTA</h2>
-        <p style="font-size: 16px;">Fornecedores de moeda antiga- banhada a ouro- prata 925- <span
-                style="color: red;">colares, pulseiras,
-                brincos</span>, <span style="font-weight: bold;">DIRETO DA FONTE</span>, <span
-                style="color: green;">lucre até 500%.</span>
+        <p style="font-size: 16px;">Fornecedores<span style="color: red;"></span>, <span
+                style="font-weight: bold;">DIRETO DA FONTE</span>, <span style="color: green;">lucre até 500%.</span>
         </p>
-        <a href="https://app.dragonpay.com.br/finalizar?id=L8BTZVYUPJRL" target="_blank" class="btn btn-success btn-lg mt-2">QUERO ACESSO A LISTA!</a>
+        <a href="https://app.dragonpay.com.br/finalizar?id=L8BTZVYUPJRL" target="_blank"
+            class="btn btn-success btn-lg mt-2">QUERO ACESSO A LISTA!</a>
     </div>
 
     <!-- Seção de Produtos com Fundo Escuro -->
@@ -79,18 +81,19 @@
         <div class="container">
             <h2 style="font-size: 20px;" class="text-center">CONFIRA ABAIXO O VALOR DE COMPRA E REVENDA DE CADA PRODUTO
             </h2>
-            <p style="font-size: 16px;" class="text-center"><strong>fornecedores com ótimos produtos!</strong></p>
+            <p style="font-size: 16px;" class="text-center"><strong>colares,pulseiras, brincos, relógios + 150
+                    opções</strong></p>
 
             <div class="row">
                 <!-- Card 1 -->
                 <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img style="height: 380px;" src="./img/cruz.png" alt="Produto 1" class="card-img-top">
+                    <div style="height: 500px;" class="card">
+                        <img style="height: 300px;" src="./img/cruz.png" alt="Produto 1" class="card-img-top">
                         <div class="card-body text-center">
                             <p style="font-size: 16px; color: black;" class="card-title font-weight-bold">Moeda Antiga
                             </p>
-                            <p class="bg-danger text-white p-2">Valor da compra R$ 30,00</p>
-                            <p class="bg-success text-white p-2">Venda por R$ 120,00</p>
+                            <p class="bg-danger text-white p-1">Valor da compra R$ 30,00</p>
+                            <p class="bg-success text-white p-1">Venda por R$ 120,00</p>
                             <p style="font-size: 16px; color: black;">Lucre até 100% nas vendas <span
                                     class="emoji">💰</span></p>
                         </div>
@@ -99,38 +102,8 @@
 
                 <!-- Card 2 -->
                 <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img style="height: 380px;" src="./img/crusifixo.png" alt="Produto 2" class="card-img-top">
-                        <div class="card-body text-center">
-                            <p style="font-size: 16px; color: black;" class="card-title font-weight-bold">Banhado a Ouro
-                            </p>
-                            <p class="bg-danger text-white p-2"> Valor da compra R$ 20,00</p>
-                            <p class="bg-success text-white p-2">Venda por R$ 100,00</p>
-                            <p style="font-size: 16px; color: black;">Lucre até 133% nas vendas <span
-                                    class="emoji">💰</span></p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img style="height: 380px;" src="./img/anel.png" alt="Produto 3" class="card-img-top">
-                        <div class="card-body text-center">
-                            <p style="font-size: 16px; color: black;" class="card-title font-weight-bold">Anel em moeda
-                                antiga</p>
-                            <p class="bg-danger text-white p-2">Valor da compra R$ 30,00</p>
-                            <p class="bg-success text-white p-2">Venda por R$ 130,00</p>
-                            <p style="font-size: 16px; color: black;">Lucre até 108% nas vendas <span
-                                    class="emoji">💰</span></p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img style="height: 380px;" src="./img/colarcristo.png" alt="Produto 4" class="card-img-top">
+                    <div style="height: 500px;" class="card">
+                        <img style="height: 300px;" src="./img/colarcristo.png" alt="Produto 4" class="card-img-top">
                         <div class="card-body text-center">
                             <p style="font-size: 16px; color: black;" class="card-title font-weight-bold">Moeda Antiga
                             </p>
@@ -142,53 +115,42 @@
                     </div>
                 </div>
 
-                <!-- Card 5 -->
+                <!-- Card 3 -->
                 <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img style="height: 380px;" src="./img/colarsanto.png" alt="Produto 5" class="card-img-top">
+                    <div style="height: 500px;" class="card">
+                        <img style="height: 300px;" src="./img/crusifixo.png" alt="Produto 2" class="card-img-top">
                         <div class="card-body text-center">
-                            <p style="font-size: 16px; color: black;" class="card-title font-weight-bold">Banhado a ouro
+                            <p style="font-size: 16px; color: black;" class="card-title font-weight-bold">Banhado a Ouro
                             </p>
-                            <p class="bg-danger text-white p-2">Valor da compra R$ 19,00</p>
-                            <p class="bg-success text-white p-2">Venda por R$ 110,00</p>
-                            <p style="font-size: 16px; color: black;">Lucre até 140% nas vendas <span
+                            <p class="bg-danger text-white p-2"> Valor da compra R$ 20,00</p>
+                            <p class="bg-success text-white p-2">Venda por R$ 100,00</p>
+                            <p style="font-size: 16px; color: black;">Lucre até 133% nas vendas <span
                                     class="emoji">💰</span></p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Card 6 -->
+                <!-- Card 4 -->
                 <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img style="height: 380px;" src="./img/corrente.png" alt="Produto 6" class="card-img-top">
+                    <div style="height: 500px;" class="card">
+                        <img style="height: 300px;" src="./img/anel.png" alt="Produto 3" class="card-img-top">
                         <div class="card-body text-center">
-                            <p style="font-size: 16px; color: black;" class="card-title font-weight-bold">Moeda Antiga
-                            </p>
+                            <p style="font-size: 16px; color: black;" class="card-title font-weight-bold">Anel em moeda
+                                antiga</p>
                             <p class="bg-danger text-white p-2">Valor da compra R$ 30,00</p>
-                            <p class="bg-success text-white p-2">Venda por R$ 140,00</p>
-                            <p style="font-size: 16px; color: black;">Lucre até 150% nas vendas <span
+                            <p class="bg-success text-white p-2">Venda por R$ 130,00</p>
+                            <p style="font-size: 16px; color: black;">Lucre até 108% nas vendas <span
                                     class="emoji">💰</span></p>
                         </div>
                     </div>
                 </div>
-                <!-- Card 7 -->
+
+
+
+                <!-- Card 5 -->
                 <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="./img/cruz1.png" alt="Produto 6" class="card-img-top">
-                        <div class="card-body text-center">
-                            <p style="font-size: 16px; color: black;" class="card-title font-weight-bold">Moeda Antiga
-                            </p>
-                            <p class="bg-danger text-white p-2">Valor da compra R$ 20,00</p>
-                            <p class="bg-success text-white p-2">Venda por R$ 100,00</p>
-                            <p style="font-size: 16px; color: black;">Lucre até 150% nas vendas <span
-                                    class="emoji">💰</span></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card 8 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img style="height: 380px;" src="./img/prata.png" alt="Produto 6" class="card-img-top">
+                    <div style="height: 500px;" class="card">
+                        <img style="height: 300px;" src="./img/prata.png" alt="Produto 6" class="card-img-top">
                         <div class="card-body text-center">
                             <p style="font-size: 16px; color: black;" class="card-title font-weight-bold">Prata 925</p>
                             <p class="bg-danger text-white p-2">Valor da compra R$ 35,00</p>
@@ -198,22 +160,11 @@
                         </div>
                     </div>
                 </div>
-                <!-- Card 9 -->
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img style="height: 380px;" src="./img/pulseira.png" alt="Produto 6" class="card-img-top">
-                        <div class="card-body text-center">
-                            <p style="font-size: 16px; color: black;" class="card-title font-weight-bold">Moeda Antiga
-                            </p>
-                            <p class="bg-danger text-white p-2">Valor da compra R$ 25,00</p>
-                            <p class="bg-success text-white p-2">Venda por R$ 120,00</p>
-                            <p style="font-size: 16px; color: black;">Lucre até 150% nas vendas <span
-                                    class="emoji">💰</span></p>
-                        </div>
-                    </div>
-                </div>
+
+
             </div>
-            <a href="https://app.dragonpay.com.br/finalizar?id=L8BTZVYUPJRL" target="_blank" class="btn btn-success btn-lg d-block mx-auto text-center">SIM, QUERO A LISTA AGORA!</a>
+            <a href="https://app.dragonpay.com.br/finalizar?id=L8BTZVYUPJRL" target="_blank"
+                class="btn btn-success btn-lg d-block mx-auto text-center">SIM, QUERO A LISTA AGORA!</a>
         </div>
     </div>
 
@@ -233,14 +184,7 @@
                 esses mesmos fornecedores que os grandes lojistas compram.</p>
         </div>
 
-        <div class="border border-danger border-dashed p-4 rounded">
-            <p style="font-size: 16px;">
-                Uma lista com mais de 220 fornecedores de moeda antiga - banhada a ouro 18kPrata 925- do Brasil com o
-                <strong>Instagram e WhatsApp de cada fornecedor</strong>,
-                só clicar e falar com eles.
-            </p>
-        </div>
-    </div>
+       </div>
 
     <div class="bg-dark text-white py-2">
         <div class="container">
@@ -251,7 +195,7 @@
 
             <div class="row">
                 <!-- Depoimento 1 -->
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-1">
                     <div style="height: 300px;" class="card">
                         <img src="./img/foto1.png" alt="Depoimento 1" class="card-img-top rounded-circle mx-auto mt-3"
                             style="width: 120px;">
@@ -265,7 +209,7 @@
                 </div>
 
                 <!-- Depoimento 2 -->
-                <div class="col-md-4 mb-4">
+                <div class="col-md-4 mb-1">
                     <div style="height: 300px;" class="card">
                         <img src="./img/foto3.png" alt="Depoimento 2" class="card-img-top rounded-circle mx-auto mt-3"
                             style="width: 120px;">
@@ -292,43 +236,17 @@
                     </div>
                 </div>
 
-                <!-- Depoimento 4 -->
-                <div class="col-md-4 mb-4">
-                    <div style="height: 300px;" class="card">
-                        <img src="./img/foto4.png" alt="Depoimento 4" class="card-img-top rounded-circle mx-auto mt-3"
-                            style="width: 120px;">
-                        <div class="card-body text-center">
-                            <h5 style="color: black;" class="card-title font-weight-bold text-black">Fernanda Costa</h5>
-                            <p style="font-size: 16px; color: black;" class="text-black">"Fiz R$2.000 rápido so com
-                                pulseiras!"</p>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Depoimento 6 -->
-                <div class="col-md-4 mb-4">
-                    <div style="height: 300px;" class="card">
-                        <img src="./img/foto5.png" alt="Depoimento 6" class="card-img-top rounded-circle mx-auto mt-3"
-                            style="width: 120px;">
-                        <div class="card-body text-center">
-                            <h5 style="color: black;" class="card-title font-weight-bold text-black">Bruno Mendes</h5>
-                            <p style="font-size: 16px; color: black;" class="text-black">" Fornecedores são Top! em uma
-                                semana já vendi mais de R$800."</p>
-                        </div>
-                    </div>
-                </div>
+               
             </div>
-            <a href="https://app.dragonpay.com.br/finalizar?id=L8BTZVYUPJRL" target="_blank" class="btn btn-success btn-lg d-block mx-auto text-center"> QUERO GARANTIR MEU LUGAR! </a>
+            <a href="https://app.dragonpay.com.br/finalizar?id=L8BTZVYUPJRL" target="_blank"
+                class="btn btn-success btn-lg d-block mx-auto text-center"> QUERO GARANTIR MEU LUGAR! </a>
         </div>
     </div>
 
     <div class="container py-2">
         <h2 style="font-size: 22px;" class="font-weight-bold">FATURE MAIS DE <span class="text-danger">R$5.000,00</span>
             TODOS OS MESES...</h2>
-        <p style="font-size: 16px;">A melhor forma de você ganhar dinheiro é você comprar algo mais barato e vender a um
-            valor mais "caro", assim
-            você consegue obter lucro.</p>
+        
         <p style="font-size: 16px;">Através dos fornecedores presentes na nossa lista você conseguirá obter de <strong
                 style="color: green;"> ate 300% de lucro
             </strong></p>
@@ -347,7 +265,8 @@
             <h2 style="font-size: 22px;" class="font-weight-bold text-white text-center">PARE DE PERDER TEMPO PROCURANDO
                 FORNECEDORES POR CONTA PRÓPRIA!</h2>
             <p style="font-size: 16px;" class="text-center">Através da lista vamos te entregar materiais para
-                <strong>alavancar o seu negócio.</strong></p>
+                <strong>alavancar o seu negócio.</strong>
+            </p>
 
             <div class="row text-left mt-5"> <!-- Altera de text-center para text-left -->
                 <!-- Card 1 -->
@@ -360,7 +279,8 @@
                             <div>
                                 <h5 style="font-size: 18px;" class="font-weight-bold text-dark">FORNECEDORES</h5>
                                 <p style="font-size: 16px;" class="text-dark">A lista contém +220 fornecedores, com
-                                    contatos de <span style="color: green; font-weight: bold;">WhatsApp</span> e Instagram para
+                                    contatos de <span style="color: green; font-weight: bold;">WhatsApp</span> e
+                                    Instagram para
                                     você entrar em contato diretamente com eles.</p>
                             </div>
                         </div>
@@ -393,8 +313,11 @@
                             </div>
                             <div>
                                 <h5 style="font-size: 18px;" class="font-weight-bold text-dark">ACESSO FÁCIL</h5>
-                                <p style="font-size: 16px;" class="text-dark">Assim que o pagamento for aprovado, você recebe a lista com mais
-                                    de 220 fornecedores imediatamente no seu <span style="color: red; font-weight: bold;">e-mail</span> e <span style="color: green; font-weight: bold; ">Whatsapp</span>
+                                <p style="font-size: 16px;" class="text-dark">Assim que o pagamento for aprovado, você
+                                    recebe a lista com mais
+                                    de 220 fornecedores imediatamente no seu <span
+                                        style="color: red; font-weight: bold;">e-mail</span> e <span
+                                        style="color: green; font-weight: bold; ">Whatsapp</span>
                                 </p>
                             </div>
                         </div>
@@ -419,11 +342,12 @@
             </div>
 
             <!-- Botão de Acesso -->
-            <a href="https://app.dragonpay.com.br/finalizar?id=L8BTZVYUPJRL" target="_blank" class="btn btn-success btn-lg d-block mx-auto text-center">ADQUIRIR A LISTA</a>
+            <a href="https://app.dragonpay.com.br/finalizar?id=L8BTZVYUPJRL" target="_blank"
+                class="btn btn-success btn-lg d-block mx-auto text-center">ADQUIRIR A LISTA</a>
         </div>
     </div>
 
-    <div class="container py-2">   
+    <div class="container py-2">
         <!-- Seção de Bônus com ícones -->
         <div class="bg- text-black p-0 my-0">
             <h4 style="font-size: 18px;" class="text-center text-danger font-weight-bold">Adquirindo hoje, você leva 5
@@ -442,7 +366,7 @@
             </ul>
         </div>
 
-        
+
 
         <!-- Preço -->
         <div class="text-center mt-2">
@@ -477,12 +401,14 @@
                     os <strong>Bônus Incríveis</strong>, que se não for tudo o que você esperava, eu devolvo 100% do
                     valor investido. Isso mesmo, você terá 7 dias para testar e, se achar que não valeu a pena, basta
                     enviar um e-mail e terá seu dinheiro de volta, sem perguntas, sem complicações. Você não tem nada a
-                    perder e muito a ganhar.</p>
+                    perder e muito a ganhar.
+                </p>
             </div>
 
             <!-- Botão de Acesso -->
             <div class="text-center mb-2">
-                <a href="https://app.dragonpay.com.br/finalizar?id=L8BTZVYUPJRL" target="_blank" class="btn btn-success btn-lg">ACESSO A LISTA</a>
+                <a href="https://app.dragonpay.com.br/finalizar?id=L8BTZVYUPJRL" target="_blank"
+                    class="btn btn-success btn-lg">ACESSO A LISTA</a>
             </div>
 
             <!-- Perguntas Frequentes -->
@@ -598,7 +524,8 @@
             <p style="font-size: 16px;" class="mb-1 font-weight-bold">TODOS OS DIREITOS RESERVADOS – LISTA DE
                 FORNECEDORES DE JOIAS EM MOEDA ANTIGA BANHADA A OURO E PRATA 925 © 2024</p>
             <p style="font-size: 16px;" class="mb-1"><a href="#" class="text-white font-weight-bold">Termos de uso</a> •
-                <a href="#" class="text-white font-weight-bold">Política de Privacidade</a></p>
+                <a href="#" class="text-white font-weight-bold">Política de Privacidade</a>
+            </p>
             <p style="font-size: 16px;" class="small"></p>
         </div>
     </footer>
